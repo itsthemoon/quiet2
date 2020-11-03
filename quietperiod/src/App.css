@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@300;400;500&display=swap");
+.app {
+  font-family: "Trispace", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  padding: 14px 40px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  font-family: "Trispace", sans-serif;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.flex-container {
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
+  height: 700px;
+}
+
+.flex-item {
+  width: 300px;
+  margin: 5px;
+  text-align: center;
+}
+
+* {
+  background-color: #ffb6c1;
+}
