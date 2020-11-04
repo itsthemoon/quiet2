@@ -21,12 +21,19 @@ button:hover {
   color: white;
 }
 
-.flex-container {
+.flex-container-home {
   display: flex; /* establish flex container */
   flex-direction: column; /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center; /* center items horizontally, in this case */
   height: 700px;
+}
+
+.flex-container {
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
 }
 
 .flex-item {
@@ -37,4 +44,38 @@ button:hover {
 
 * {
   background-color: #ffb6c1;
+}
+
+.post {
+  font-family: "Trispace", sans-serif;
+  color: black;
+  height: 300px;
+  width: 30%;
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  margin: 20px;
+}
+
+#post-text {
+  color: black;
+  background: white;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  color: black;
+}
+
+.navbutton {
+  width: 200px;
+  margin: 5px;
+  text-align: center;
 }
