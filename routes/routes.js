@@ -4,7 +4,7 @@ const Post = require('../models/posts')
 
 router.post('/', async (req, res) => {
     const post = new Post({
-        title: req.body.title,
+        post: req.body.post,
     });
     try {
         const savedPost = await post.save()

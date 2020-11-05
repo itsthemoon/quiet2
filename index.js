@@ -6,8 +6,9 @@ const cors = require("cors");
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-app.use(bodyParser.json());
 
+app.use(bodyParser.json());
+app.use(cors())
 //Import routes
 const postRoute = require('./routes/routes');
 app.use('/posts', postRoute);

@@ -1,24 +1,42 @@
 import React from 'react';
-import './App.css';
-import { Link } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
-function Post() {
-    const { register, handleSubmit } = useForm();
-
-    const onSubmit = (data) => {
-        console.log(data);
+export default class PersonList extends React.Component {
+    state = {
+        post: '',
     }
 
-    return (
-        <div className="flex-container-home">
-            <div className="app">
-                <form onSubmit={handleSubmit(onSubmit)}>
-                    <input type="text" placeholder="Post" name="post" id="firstName" ref={register} />
-                    <input type="submit" />
-                </form>
+    handleChange = event => {
+        this.setState({ post: event.target.value });
+    }
+
+    handleSubmit = event => {
+        event.preventDefault();
+
+        const post = {
+            post: this.state.name
+        };
+
+        axios.post('http://localhost:5000/posts', { post })
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
+    }
+
+    render() {
+        return (
+            <div className="flex-container-home">
+                <div className="app">
+                    <form onSubmit={this.handleSubmit}>
+                        <label>
+                            Post:
+                        <input type="text" name="post" onChange={this.handleChange} />
+                        </label>
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    );
+        )
+    }
 }
-export default Post;

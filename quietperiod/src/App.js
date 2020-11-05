@@ -25,7 +25,6 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-
         <Route path="/" exact component={Home} />
         <Route path="/scroll" component={Scroll} />
         <Route path="/post" component={Post} />
