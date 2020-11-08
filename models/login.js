@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
 
-const PostSchema = mongoose.Schema({
-    title: {
+const LoginSchema = mongoose.Schema({
+    username: {
         type: String,
         required: true
     },
-    body: {
+    password: {
         type: String,
         required: true
     },
@@ -16,4 +16,4 @@ const PostSchema = mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('Posts', PostSchema)
+module.exports = mongoose.model('Login', LoginSchema)

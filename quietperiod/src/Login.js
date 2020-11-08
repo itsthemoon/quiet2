@@ -2,13 +2,12 @@ import React from 'react';
 import axios from 'axios';
 
 
-export default class Post extends React.Component {
+export default class Login extends React.Component {
 
     state = {
-        title: "",
-        body: ""
+        username: "",
+        password: ""
     };
-
 
     handleChange = (event) => {
         const target = event.target;
@@ -24,12 +23,12 @@ export default class Post extends React.Component {
         event.preventDefault();
 
         const payload = {
-            title: this.state.title,
-            body: this.state.body,
+            username: this.state.username,
+            password: this.state.password,
         }
 
         axios({
-            url: 'http://localhost:5000/posts/save',
+            url: 'http://localhost:5000/posts/login',
             method: 'POST',
             data: payload,
         })
@@ -42,22 +41,21 @@ export default class Post extends React.Component {
     };
 
     render() {
-        console.log("State ", this.state)
         return (
             <div className="flex-container-home">
                 <div className="app">
                     <form onSubmit={this.submit}>
                         <input
-                            placeholder="title"
+                            placeholder="Username"
                             type="text"
-                            name="title"
-                            value={this.state.title}
+                            name="username"
+                            value={this.state.username}
                             onChange={this.handleChange}
                         />
-                        <textarea placeholder="description"
-                            name="body"
+                        <textarea placeholder="password"
+                            name="password"
                             cols="30" rows="10"
-                            value={this.state.body}
+                            value={this.state.password}
                             onChange={this.handleChange}
                         >
                         </textarea>

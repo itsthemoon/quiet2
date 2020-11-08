@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 app.use(cors())
 //Import routes
 const postRoute = require('./routes/routes');
+
+//HTTP request logger
 app.use('/posts', postRoute);
 
 
