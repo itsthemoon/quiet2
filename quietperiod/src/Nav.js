@@ -11,9 +11,6 @@ function Nav() {
                 <Link to="/post">
                     <button className="navbutton">Post</button>
                 </Link>
-                <Link to="/login">
-                    <button className="navbutton">Login</button>
-                </Link>
             </div>
         </div>
     );

@@ -6,7 +6,7 @@ import axios from "axios";
 export default class Scroll extends React.Component {
 
     state = {
-        posts: []
+        posts: [],
     }
 
     componentDidMount() {
@@ -21,10 +21,11 @@ export default class Scroll extends React.Component {
         return (
             <div className="flex-container">
                 {
-                    this.state.posts.map(posts =>
+                    this.state.posts.reverse().map(posts =>
                         <div className="post">
                             <h3 id="post-text">{posts.title}</h3>
                             <p id="post-text">{posts.body}</p>
+
                         </div>
                     )}
             </div>
