@@ -6,6 +6,8 @@ import Scroll from "./Scroll"
 import Nav from "./Nav.js"
 import Post from "./Post";
 import Login from "./Login";
+import Register from "./Register";
+import Saved from "./Saved"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -21,6 +23,7 @@ function App() {
   });
 
 
+
   return (
 
     <Router>
@@ -30,6 +33,8 @@ function App() {
         <Route path="/scroll" component={Scroll} />
         <Route path="/post" component={Post} />
         <Route path="/login" component={Login} />
+        <Route path="/saved" component={Saved} />
+        <Route path="/register" component={Register} />
       </Switch>
     </Router>
   );
