@@ -6,7 +6,8 @@ export default class Post extends React.Component {
 
     state = {
         title: "",
-        body: ""
+        body: "",
+        going: 1
     };
 
 
@@ -26,6 +27,7 @@ export default class Post extends React.Component {
         const payload = {
             title: this.state.title,
             body: this.state.body,
+            going: this.state.going
         }
 
         axios({
