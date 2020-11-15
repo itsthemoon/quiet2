@@ -37,7 +37,7 @@ button:hover {
 }
 
 .flex-item {
-  width: 300px;
+  width: 500px;
   margin: 5px;
   text-align: center;
 }
@@ -49,8 +49,8 @@ button:hover {
 .post {
   font-family: "Trispace", sans-serif;
   color: black;
-  height: 300px;
-  width: 30%;
+  height: 400px;
+  width: 400px;
   background: white;
   border-radius: 30px;
   display: flex;
@@ -58,12 +58,15 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   align-content: space-between;
-  margin: 20px;
+  margin: 65px;
+  box-shadow: 5px 7px;
 }
 
 #post-text {
   color: black;
+  padding: 0px 10px 0px 10px;
   background: white;
+  font-size: medium;
 }
 
 .navbar {
@@ -78,4 +81,29 @@ button:hover {
   width: 200px;
   margin: 5px;
   text-align: center;
+}
+
+#homeTitle {
+  font-size: 300%;
+}
+
+#going-btn {
+  padding: 5px 10px;
+}
+
+#event {
+  font-family: "Trispace", sans-serif;
+  color: black;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  background: white;
+  font-size: medium;
+}
+.add-event {
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main axis vertical */
+  justify-content: space-around;
+  align-items: center; /* center items horizontally, in this case */
+  align-content: space-between;
+  background: white;
 }

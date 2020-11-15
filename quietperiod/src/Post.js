@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 
+
 export default class Post extends React.Component {
 
     state = {
@@ -37,6 +38,10 @@ export default class Post extends React.Component {
         })
             .then(() => {
                 console.log('Data sent to the server');
+                this.props.history.push('/scroll')
+
+
+
             })
             .catch(() => {
                 console.log('Internal server error');
@@ -46,24 +51,26 @@ export default class Post extends React.Component {
     render() {
         console.log("State ", this.state)
         return (
-            <div className="flex-container-home">
-                <div className="app">
+            <div className="flex-container">
+                <div className="post">
                     <form onSubmit={this.submit}>
-                        <input
-                            placeholder="title"
-                            type="text"
-                            name="title"
-                            value={this.state.title}
-                            onChange={this.handleChange}
-                        />
-                        <textarea placeholder="description"
-                            name="body"
-                            cols="30" rows="10"
-                            value={this.state.body}
-                            onChange={this.handleChange}
-                        >
-                        </textarea>
-                        <button>Submit</button>
+                        <div className="add-event">
+                            <input id="event"
+                                placeholder="title"
+                                type="text"
+                                name="title"
+                                value={this.state.title}
+                                onChange={this.handleChange}
+                            />
+                            <textarea id="event" placeholder="description"
+                                name="body"
+                                cols="30" rows="10"
+                                value={this.state.body}
+                                onChange={this.handleChange}
+                            >
+                            </textarea>
+                            <button id="event">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>

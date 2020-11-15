@@ -5,7 +5,7 @@ import Home from "./Home";
 import Scroll from "./Scroll"
 import Nav from "./Nav.js"
 import Post from "./Post";
-import iPost from "./Ipost";
+import Snowfall from 'react-snowfall'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -25,12 +25,12 @@ function App() {
   return (
 
     <Router>
+      <Snowfall />
       <Nav />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/scroll" component={Scroll} />
         <Route path="/post" component={Post} />
-        <Route path="/posts/:id" exact component={iPost} />
       </Switch>
     </Router>
   );
