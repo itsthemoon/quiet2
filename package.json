@@ -25,6 +25,7 @@
     "mongoose": "^5.10.11",
     "radium": "^0.26.1",
     "react-animations": "^1.0.0",
-    "react-snowfall": "^1.0.2"
+    "react-snowfall": "^1.0.2",
+    "react-snowstorm": "0.0.3"
   }
 }

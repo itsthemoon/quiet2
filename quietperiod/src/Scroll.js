@@ -1,17 +1,14 @@
-
 import React from 'react';
 import './App.css';
 import axios from "axios";
-import { bounce } from 'react-animations';
-import Radium, { StyleRoot } from 'radium';
+
 
 
 
 export default class Scroll extends React.Component {
 
     state = {
-        posts: [],
-        going: 3
+        posts: []
     }
 
 
@@ -53,14 +50,15 @@ export default class Scroll extends React.Component {
         return (
 
             <div className="flex-container">
-
+                <div>
+                    <h2 className="title">Things Happening</h2>
+                </div>
                 {
                     this.state.posts.reverse().map((posts) =>
                         <div className="post">
-                            <h3 id="post-text">{posts.title}</h3>
+                            <h3 id="post-title" >{posts.title}</h3>
                             <p id="post-text">{posts.body}</p>
-                            <p id="post-text">Attendees:{posts.going}</p>
-                            <button id="going-btn" onClick={() => this.handleClick(posts._id)}>Going</button>
+                            <button id="going-btn" onClick={() => this.handleClick(posts._id)}>{posts.going} Attending</button>
                         </div>
 
                     )}

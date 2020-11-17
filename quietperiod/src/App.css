@@ -4,6 +4,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: flex-end;
+}
+
+.start {
+  font-family: "Trispace", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -19,6 +27,10 @@ button {
 button:hover {
   background-color: black;
   color: white;
+}
+
+button:focus {
+  outline-style: none;
 }
 
 .flex-container-home {
@@ -40,10 +52,6 @@ button:hover {
   width: 500px;
   margin: 5px;
   text-align: center;
-}
-
-* {
-  background-color: #ffb6c1;
 }
 
 .post {
@@ -69,15 +77,33 @@ button:hover {
   font-size: medium;
 }
 
+#post-title {
+  color: black;
+  padding: 0px 10px 0px 10px;
+  background: white;
+  font-size: x-large;
+}
+
+.title {
+  color: black;
+  padding: 15px 10px 10px 15px;
+  background: white;
+  font-size: x-large;
+  box-shadow: 5px 7px;
+  font-family: "Trispace", sans-serif;
+}
+
 .navbar {
   display: flex;
+  padding-bottom: 10vw;
   width: 100%;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: flex-end;
   color: black;
 }
 
 .navbutton {
+  box-shadow: 5px 7px;
   width: 200px;
   margin: 5px;
   text-align: center;
@@ -106,4 +132,105 @@ button:hover {
   align-items: center; /* center items horizontally, in this case */
   align-content: space-between;
   background: white;
+  box-shadow: 5px 7px;
+  border-radius: 30px;
+}
+
+body {
+  background-color: #ffb6c1;
+}
+
+@media screen and (max-width: 800px) {
+  .navbutton {
+    box-shadow: 5px 7px;
+    width: 38vw;
+    margin: 9px;
+    text-align: center;
+    padding: 2vw;
+  }
+  .post {
+    font-family: "Trispace", sans-serif;
+    color: black;
+    height: 99vw;
+    width: 70vw;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    margin: 65px;
+    box-shadow: 5px 7px;
+  }
+
+  .flex-container-home {
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center; /* center items horizontally, in this case */
+    height: 75vw;
+  }
+
+  .app {
+    font-family: "Trispace", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #event {
+    font-family: "Trispace", sans-serif;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    background: white;
+    font-size: medium;
+    width: 65vw;
+  }
+
+  .add-event {
+    font-family: "Trispace", sans-serif;
+    color: black;
+    height: 150vw;
+    width: 77vw;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    margin: 65px;
+    box-shadow: 5px 7px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    background: white;
+    margin-bottom: -348px;
+  }
+
+  .start {
+    font-family: "Trispace", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .flex-item {
+    width: 85vw;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 5px 7px;
+  }
+
+  #homeTitle {
+    color: black;
+    padding: 18px 10px 10px 15px;
+    background: white;
+    margin-bottom: 80vw;
+    margin-top: 33vw;
+    font-size: xxx-large;
+    box-shadow: 10px 16px;
+    font-family: "Trispace", sans-serif;
+  }
 }

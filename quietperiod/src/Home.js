@@ -11,16 +11,18 @@ function Home() {
         }
     }
     return (
-        <div className="flex-container-home">
-            <StyleRoot>
-                <div className="app" style={styles.bounce}>
-                    <h1 className="flex-item" id="homeTitle">Quiet Period 2024</h1>
-                    <Link to="/scroll">
-                        <button className="flex-item">Click to explore</button>
-                    </Link>
-                </div>
-            </StyleRoot>
-        </div>
+
+        <StyleRoot>
+            <div className="start" style={styles.bounce}>
+                <h1 className="flex-item" id="homeTitle">Quiet Period 2024</h1>
+            </div>
+            <div className="start" >
+                <Link to="/scroll">
+                    <button className="flex-item">Click to explore</button>
+                </Link>
+            </div>
+        </StyleRoot>
+
 
     );
 }

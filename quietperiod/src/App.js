@@ -5,7 +5,7 @@ import Home from "./Home";
 import Scroll from "./Scroll"
 import Nav from "./Nav.js"
 import Post from "./Post";
-import Snowfall from 'react-snowfall'
+import Snowstorm from 'react-snowstorm';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -25,7 +25,10 @@ function App() {
   return (
 
     <Router>
-      <Snowfall />
+      <Snowstorm style={{ backgroundColor: "transparent" }}>
+        <excludeMobile>{false}</excludeMobile>
+        <animationInterval>{45}</animationInterval>
+      </Snowstorm>
       <Nav />
       <Switch>
         <Route path="/" exact component={Home} />
