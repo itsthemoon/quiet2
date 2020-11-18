@@ -13,6 +13,7 @@ export default class Scroll extends React.Component {
 
 
     componentDidMount() {
+
         axios.get('http://localhost:5000/posts/save')
             .then(res => {
                 const posts = res.data;
@@ -51,6 +52,7 @@ export default class Scroll extends React.Component {
 
             <div className="flex-container">
                 <div>
+
                     <h2 className="title">Things Happening</h2>
                 </div>
                 {

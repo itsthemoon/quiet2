@@ -2,13 +2,11 @@ import './App.css';
 import React from "react";
 import Axios from "axios";
 import Home from "./Home";
-import Scroll from "./Scroll"
-import Nav from "./Nav.js"
+import Scroll from "./Scroll";
+import Nav from "./Nav.js";
 import Post from "./Post";
-import Snowstorm from 'react-snowstorm';
-
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
+var Snow = require('react-snow-effect');
 
 function App() {
   Axios({
@@ -25,10 +23,7 @@ function App() {
   return (
 
     <Router>
-      <Snowstorm style={{ backgroundColor: "transparent" }}>
-        <excludeMobile>{false}</excludeMobile>
-        <animationInterval>{45}</animationInterval>
-      </Snowstorm>
+      <Snow />
       <Nav />
       <Switch>
         <Route path="/" exact component={Home} />
