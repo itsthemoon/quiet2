@@ -5,6 +5,7 @@ import Home from "./Home";
 import Scroll from "./Scroll";
 import Nav from "./Nav.js";
 import Post from "./Post";
+import Carousel from "./Slideshow";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 var Snow = require('react-snow-effect');
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/scroll" component={Scroll} />
         <Route path="/post" component={Post} />
+        <Route path="/demo" component={Carousel} />
       </Switch>
     </Router>
   );

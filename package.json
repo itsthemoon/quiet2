@@ -24,11 +24,14 @@
     "express": "^4.17.1",
     "mongoose": "^5.10.11",
     "radium": "^0.26.1",
+    "react": "^17.0.1",
     "react-animations": "^1.0.0",
     "react-popup": "^0.10.0",
     "react-snow-effect": "^1.2.0",
     "react-snowfall": "^1.0.2",
     "react-snowstorm": "0.0.3",
-    "reactjs-popup": "^2.0.4"
+    "react-swipe": "^6.0.4",
+    "reactjs-popup": "^2.0.4",
+    "swipe-js-iso": "^2.1.5"
   }
 }

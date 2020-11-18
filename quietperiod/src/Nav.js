@@ -12,6 +12,9 @@ function Nav() {
                 <Link to="/post">
                     <button className="navbutton">Add Event</button>
                 </Link>
+                <Link to="/demo">
+                    <button className="navbutton">Demo</button>
+                </Link>
             </div>
         </div>
 

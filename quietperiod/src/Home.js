@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
-import example from './example.gif';
+
 
 function Home() {
     return (
@@ -9,8 +9,8 @@ function Home() {
         <div>
             <div className="start" >
                 <h1 className="flex-item" id="homeTitle">Quiet Period 2024</h1>
-                <div className="example">
-                    <img src={example} alt="example" id="example" />
+                <div>
+                    <img src="https://freepikpsd.com/wp-content/uploads/2020/04/blueno-png-3-Free-Images-Transparent.png" alt="example" id="bear" />
                 </div>
             </div>
             <div className="start" >

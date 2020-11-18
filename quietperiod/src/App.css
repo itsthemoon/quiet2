@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Trispace:wght@300;400;500&display=swap");
+
 .app {
   font-family: "Trispace", sans-serif;
   display: flex;
@@ -7,6 +8,20 @@
   align-items: flex-end;
 }
 
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 134vw;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
 .start {
   font-family: "Trispace", sans-serif;
   display: flex;
@@ -109,8 +124,23 @@ button:focus {
   text-align: center;
 }
 
+.demobutton {
+  box-shadow: 5px 7px;
+  width: 17vw;
+  margin: 5vw;
+  margin-left: 16vw;
+  text-align: center;
+}
+
 #homeTitle {
-  font-size: 300%;
+  color: black;
+  padding: 18px 10px 10px 15px;
+  background: white;
+  margin-bottom: 9vw;
+  margin-top: -9vw;
+  font-size: xxx-large;
+  box-shadow: 10px 16px;
+  font-family: "Trispace", sans-serif;
 }
 
 #going-btn {
@@ -141,16 +171,23 @@ body {
 }
 
 #example {
+  height: 23vw;
   border-radius: 30px;
-  margin-top: 10vw;
-  margin-bottom: 11vw;
+  margin-top: 2vw;
+  margin-left: 36vw;
+  margin-bottom: 3vw;
   box-shadow: 24px 9px;
+}
+
+#bear {
+  border-radius: 30px;
+  height: 36vw;
 }
 
 @media screen and (max-width: 800px) {
   .navbutton {
     box-shadow: 5px 7px;
-    width: 38vw;
+    width: 27vw;
     margin: 9px;
     text-align: center;
     padding: 2vw;
@@ -200,7 +237,7 @@ body {
   .add-event {
     font-family: "Trispace", sans-serif;
     color: black;
-    height: 129vw;
+    height: 118vw;
     width: 77vw;
     background: white;
     border-radius: 30px;
@@ -239,5 +276,19 @@ body {
     font-size: xxx-large;
     box-shadow: 10px 16px;
     font-family: "Trispace", sans-serif;
+  }
+
+  #example {
+    height: 93vw;
+    border-radius: 30px;
+    margin-top: 10vw;
+    margin-left: 20vw;
+    margin-bottom: 11vw;
+    box-shadow: 24px 9px;
+  }
+  #bear {
+    height: 76vw;
+    margin-top: 12vw;
+    margin-bottom: 19vw;
   }
 }
