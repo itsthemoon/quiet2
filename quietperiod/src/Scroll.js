@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from "axios";
-
+import things from "./images/things.png";
 
 
 
@@ -53,14 +53,14 @@ export default class Scroll extends React.Component {
             <div className="flex-container">
                 <div>
 
-                    <h2 className="title">Things Happening</h2>
+                    <img src={things} className="pic2"></img>
                 </div>
                 {
                     this.state.posts.reverse().map((posts) =>
                         <div className="post">
                             <h3 id="post-title" >{posts.title}</h3>
                             <p id="post-text">{posts.body}</p>
-                            <button id="going-btn" onClick={() => this.handleClick(posts._id)}>{posts.going} Attending</button>
+                            <button id="going-btn" onClick={() => this.handleClick(posts._id)}>{posts.going} attending</button>
                         </div>
 
                     )}

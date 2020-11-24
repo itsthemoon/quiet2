@@ -5,15 +5,13 @@ function Nav() {
     return (
 
         <div className="navbar">
+            {/*navbar*/}
             <div className="app">
                 <Link to="/scroll">
-                    <button className="navbutton">Posts</button>
+                    <button className="navbutton">posts</button>
                 </Link>
                 <Link to="/post">
-                    <button className="navbutton">Add Event</button>
-                </Link>
-                <Link to="/demo">
-                    <button className="navbutton">Demo</button>
+                    <button className="navbutton">add event</button>
                 </Link>
             </div>
         </div>
